@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jogo.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="container-jogo">
+            <div class="box">
+                <div onclick="um_click()" class="linha" id="um"></div>
+                <div onclick="dois_click()" class="linha" id="dois"></div>
+                <div onclick="tres_click()" class="linha" id="tres"></div>
+            </div>
+            <div class="box">
+                <div onclick="quatro_click()" class="linha" id="quatro"></div>
+                <div onclick="cinco_click()" class="linha" id="cinco"></div>
+                <div onclick="seis_click()" class="linha" id="seis"></div>
+            </div>
+            <div class="box">
+                <div onclick="sete_click()" class="linha" id="sete"></div>
+                <div onclick="oito_click()" class="linha" id="oito"></div>
+                <div onclick="nove_click()" class="linha" id="nove"></div>
+            </div>
+        </div>
+
+    </div>
+    <audio id="naoRoda" src="./audio/y2mate.com - Agulha Arranhando Disco, Som de Fail - Efeito Sonoro.mp3"></audio>
+    <audio id="vaiRodar" src="./audio/efeito_sonoro_risada_de_ladrao_2139370119085460434.mp3"></audio>
+</body>
+
+</html>
+<script>
+    var cont = 0;
+    function um_click() {
+        var verifico=um.innerHTML
+        if(verifico==""){
+            vaiRodar.play()
+            cont++
+
+            if (cont % 2 == 0) {
+                um.innerHTML = `<img class="img_click" src="./img/o.png" alt="">`
+            } else {
+                um.innerHTML = `<img class="img_click" src="./img/x.png" alt="">`
+                
+            }
+        }else{
+            naoRoda.play()
+        }
+    } function dois_click() {
+        var verifico=dois.innerHTML
+        if(verifico==""){
+            vaiRodar.play()
+
+            cont++
+
+        if (cont % 2 == 0) {
+            dois.innerHTML = `<img class="img_click" src="./img/o.png" alt="">`
+        } else {
+            dois.innerHTML = `<img class="img_click" src="./img/x.png" alt="">`
+
+        }
+    }else{
+            naoRoda.play()
+        }
+    } function tres_click() {
+        var verifico=tres.innerHTML
+        if(verifico==""){
+            vaiRodar.play()
+            
+            cont++
+            
+            if (cont % 2 == 0) {
+                tres.innerHTML = `<img class="img_click" src="./img/o.png" alt="">`
+            } else {
+                tres.innerHTML = `<img class="img_click" src="./img/x.png" alt="">`
+                
+            }
+            verificar()
+    }else{
+            naoRoda.play()
+        }
+    } function quatro_click() {
+        var verifico=quatro.innerHTML
+        if(verifico==""){
+            vaiRodar.play()
+
+            cont++
+
+        if (cont % 2 == 0) {
+            quatro.innerHTML = `<img class="img_click" src="./img/o.png" alt="">`
+        } else {
+            quatro.innerHTML = `<img class="img_click" src="./img/x.png" alt="">`
+
+        }
+    }else{
+            naoRoda.play()
+        }
+    } function cinco_click() {
+        var verifico=cinco.innerHTML
+        if(verifico==""){
+            vaiRodar.play()
+
+            cont++
+
+        if (cont % 2 == 0) {
+            cinco.innerHTML = `<img class="img_click" src="./img/o.png" alt="">`
+        } else {
+            cinco.innerHTML = `<img class="img_click" src="./img/x.png" alt="">`
+
+        }
+    }else{
+            naoRoda.play()
+        }
+    } function seis_click() {
+        var verifico=seis.innerHTML
+        if(verifico==""){
+            vaiRodar.play()
+
+            cont++
+
+        if (cont % 2 == 0) {
+            seis.innerHTML = `<img class="img_click" src="./img/o.png" alt="">`
+        } else {
+            seis.innerHTML = `<img class="img_click" src="./img/x.png" alt="">`
+
+        }
+    }else{
+            naoRoda.play()
+        }
+    } function sete_click() {
+        var verifico=sete.innerHTML
+        if(verifico==""){
+            vaiRodar.play()
+
+            cont++
+            
+        if (cont % 2 == 0) {
+            sete.innerHTML = `<img class="img_click" src="./img/o.png" alt="">`
+        } else {
+            sete.innerHTML = `<img class="img_click" src="./img/x.png" alt="">`
+
+        }
+    }else{
+            naoRoda.play()
+        }
+    } function oito_click() {
+        var verifico=oito.innerHTML
+        if(verifico==""){
+            vaiRodar.play()
+
+            cont++
+
+        if (cont % 2 == 0) {
+            oito.innerHTML = `<img class="img_click" src="./img/o.png" alt="">`
+        } else {
+            oito.innerHTML = `<img class="img_click" src="./img/x.png" alt="">`
+
+        }
+    }else{
+            naoRoda.play()
+        }
+    } function nove_click() {
+        var verifico=nove.innerHTML
+        if(verifico==""){
+            vaiRodar.play()
+
+            cont++
+
+        if (cont % 2 == 0) {
+            nove.innerHTML = `<img class="img_click" src="./img/o.png" alt="">`
+        } else {
+            nove.innerHTML = `<img class="img_click" src="./img/x.png" alt="">`
+        }
+    }else{
+            naoRoda.play()
+        }
+    }
+
+    function verificar(){
+        if(um.innerHTML==`<img class="img_click" src="./img/o.png" alt="">` && dois.innerHTML==`<img class="img_click" src="./img/o.png" alt="">` && tres.innerHTML==`<img class="img_click" src="./img/o.png" alt="">`){
+            alert("O ganhou")
+        }else if()
+    }
+
+
+
+
+
+</script>

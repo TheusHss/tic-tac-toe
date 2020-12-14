@@ -1,0 +1,62 @@
+body{
+    background-color: black;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-jogo{
+    height: 75vh;
+    width: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.linha{
+    height: 25vh;
+    width: 25vh;
+    border: solid white 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#um{
+border-left:none;
+border-top: none;
+}
+#dois{
+    border-top: none;
+}
+#tres{
+    border-right:none ;
+    border-top: none;
+}
+#quatro{
+    border-left: none;
+}
+#seis{
+    border-right:none ;
+}
+#sete{
+    border-left: none;
+    border-bottom: none;
+}
+#oito{
+    border-bottom: none;
+}
+#nove{
+    border-bottom: none;
+    border-right:none;
+}
+.img_click{
+    height: 20vh;
+}
