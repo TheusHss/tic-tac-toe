@@ -10,19 +10,27 @@
 
 <body>
     <div class="container">
+        <div id="abaCadastro">
+            <h1>Jogadore um</h1>
+            <input id="jogador_um" type="text">
+            <h1>Jogador dois</h1>
+            <input id="jogador_dois" type="text">
+            <button onclick="iniciar()">INICIAR</button>
+        </div>
 
-        <div class="container-jogo">
-            <div class="box">
+        <div class="container-jogo" id="container_jogo">
+            <h1 id="vez"></h1>
+            <div onclick="box_click()" class="box">
                 <div onclick="um_click()" class="linha" id="um"></div>
                 <div onclick="dois_click()" class="linha" id="dois"></div>
                 <div onclick="tres_click()" class="linha" id="tres"></div>
             </div>
-            <div class="box">
+            <div onclick="box_click()" class="box">
                 <div onclick="quatro_click()" class="linha" id="quatro"></div>
                 <div onclick="cinco_click()" class="linha" id="cinco"></div>
                 <div onclick="seis_click()" class="linha" id="seis"></div>
             </div>
-            <div class="box">
+            <div onclick="box_click()" class="box">
                 <div onclick="sete_click()" class="linha" id="sete"></div>
                 <div onclick="oito_click()" class="linha" id="oito"></div>
                 <div onclick="nove_click()" class="linha" id="nove"></div>
@@ -36,7 +44,31 @@
 
 </html>
 <script>
+    var registro=[]
+    function iniciar(){
+        if(jogador_um.value!="" && jogador_dois.value!=""){
+
+            var jogadores ={
+                player_one:(jogador_um.value).toUpperCase(),
+                player_two:(jogador_dois.value).toUpperCase()
+            }
+            registro.push(jogadores)
+        abaCadastro.style.display="none"
+        container_jogo.style.display="flex"
+        }else{
+            alert("preencha os campos")
+        }
+       box_click()
+    }
     var cont = 0;
+    function box_click(){
+        if(cont%2==0){
+            vez.innerHTML=`VEZ DO JOGADOR ${registro[0].player_one}`
+        }else{
+            vez.innerHTML=`VEZ DO JOGADOR ${registro[0].player_two}`
+
+        }
+    }
     function um_click() {
         var verifico=um.innerHTML
         if(verifico==""){
@@ -81,7 +113,6 @@
                 tres.innerHTML = `<img class="img_click" src="./img/x.png" alt="">`
                 
             }
-            verificar()
     }else{
             naoRoda.play()
         }
@@ -181,15 +212,6 @@
             naoRoda.play()
         }
     }
-
-    function verificar(){
-        if(um.innerHTML==`<img class="img_click" src="./img/o.png" alt="">` && dois.innerHTML==`<img class="img_click" src="./img/o.png" alt="">` && tres.innerHTML==`<img class="img_click" src="./img/o.png" alt="">`){
-            alert("O ganhou")
-        }else if()
-    }
-
-
-
 
 
 </script>
