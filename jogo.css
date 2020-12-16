@@ -101,3 +101,11 @@ border-top: none;
 .img_click{
     height: 20vh;
 }
+.timeDeJogo{
+    position: absolute;
+    top: 2vh;
+    height: 2vh;
+    width: 100vh;
+    background-color: cyan;
+    transition: 0.1s;
+}
