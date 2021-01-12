@@ -8,7 +8,7 @@ function tempo() {
                 vez.innerHTML = `PARABÉNS AO JOGADOR ${registro[0].player_two}`
             } else {
                 vez.innerHTML = `PARABÉNS AO JOGADOR ${registro[0].player_one}`
-        
+
             }
 
         } else if (contTime <= 20) {
@@ -29,7 +29,7 @@ function tempo() {
 var registro = []
 function resetar() {
     cont = 0
-    contTime=100
+    contTime = 100
     um.innerHTML = ""
     dois.innerHTML = ""
     tres.innerHTML = ""
@@ -62,9 +62,7 @@ var cont = 0;
 function box_click() {
     if (cont % 2 == 0) {
         vez.innerHTML = `VEZ DO JOGADOR ${registro[0].player_one}`
-        contTime = 100;
     } else {
-        contTime = 100;
         vez.innerHTML = `VEZ DO JOGADOR ${registro[0].player_two}`
 
     }
@@ -72,6 +70,7 @@ function box_click() {
 function um_click() {
     var verifico = um.innerHTML
     if (verifico == "") {
+        contTime = 100;
         vaiRodar.play()
         cont++
 
@@ -87,6 +86,7 @@ function um_click() {
 } function dois_click() {
     var verifico = dois.innerHTML
     if (verifico == "") {
+        contTime = 100;
         vaiRodar.play()
 
         cont++
@@ -103,6 +103,7 @@ function um_click() {
 } function tres_click() {
     var verifico = tres.innerHTML
     if (verifico == "") {
+        contTime = 100;
         vaiRodar.play()
 
         cont++
@@ -119,6 +120,7 @@ function um_click() {
 } function quatro_click() {
     var verifico = quatro.innerHTML
     if (verifico == "") {
+        contTime = 100;
         vaiRodar.play()
 
         cont++
@@ -135,6 +137,7 @@ function um_click() {
 } function cinco_click() {
     var verifico = cinco.innerHTML
     if (verifico == "") {
+        contTime = 100;
         vaiRodar.play()
 
         cont++
@@ -151,6 +154,7 @@ function um_click() {
 } function seis_click() {
     var verifico = seis.innerHTML
     if (verifico == "") {
+        contTime = 100;
         vaiRodar.play()
 
         cont++
@@ -167,6 +171,7 @@ function um_click() {
 } function sete_click() {
     var verifico = sete.innerHTML
     if (verifico == "") {
+        contTime = 100;
         vaiRodar.play()
 
         cont++
@@ -183,6 +188,7 @@ function um_click() {
 } function oito_click() {
     var verifico = oito.innerHTML
     if (verifico == "") {
+        contTime = 100;
         vaiRodar.play()
 
         cont++
@@ -199,6 +205,7 @@ function um_click() {
 } function nove_click() {
     var verifico = nove.innerHTML
     if (verifico == "") {
+        contTime = 100;
         vaiRodar.play()
 
         cont++
@@ -212,4 +219,5 @@ function um_click() {
         naoRoda.play()
     }
 }
+
 
