@@ -83,6 +83,7 @@ function um_click() {
     } else {
         naoRoda.play()
     }
+    verificarVitoria()
 } function dois_click() {
     var verifico = dois.innerHTML
     if (verifico == "") {
@@ -100,6 +101,7 @@ function um_click() {
     } else {
         naoRoda.play()
     }
+    verificarVitoria()
 } function tres_click() {
     var verifico = tres.innerHTML
     if (verifico == "") {
@@ -117,6 +119,7 @@ function um_click() {
     } else {
         naoRoda.play()
     }
+    verificarVitoria()
 } function quatro_click() {
     var verifico = quatro.innerHTML
     if (verifico == "") {
@@ -134,6 +137,7 @@ function um_click() {
     } else {
         naoRoda.play()
     }
+    verificarVitoria()
 } function cinco_click() {
     var verifico = cinco.innerHTML
     if (verifico == "") {
@@ -151,6 +155,7 @@ function um_click() {
     } else {
         naoRoda.play()
     }
+    verificarVitoria()
 } function seis_click() {
     var verifico = seis.innerHTML
     if (verifico == "") {
@@ -168,6 +173,7 @@ function um_click() {
     } else {
         naoRoda.play()
     }
+    verificarVitoria()
 } function sete_click() {
     var verifico = sete.innerHTML
     if (verifico == "") {
@@ -185,6 +191,7 @@ function um_click() {
     } else {
         naoRoda.play()
     }
+    verificarVitoria()
 } function oito_click() {
     var verifico = oito.innerHTML
     if (verifico == "") {
@@ -202,6 +209,7 @@ function um_click() {
     } else {
         naoRoda.play()
     }
+    verificarVitoria()
 } function nove_click() {
     var verifico = nove.innerHTML
     if (verifico == "") {
@@ -218,6 +226,14 @@ function um_click() {
     } else {
         naoRoda.play()
     }
+    verificarVitoria()
+}
+function verificarVitoria(){
+    if(nove.innerHTML == `<img class="img_click" src="./img/x.png" alt="">`&&  oito.innerHTML == `<img class="img_click" src="./img/x.png" alt="">` &&  sete.innerHTML == `<img class="img_click" src="./img/x.png" alt="">` || seis.innerHTML == `<img class="img_click" src="./img/x.png" alt="">`&&  cinco.innerHTML == `<img class="img_click" src="./img/x.png" alt="">` &&  quatro.innerHTML == `<img class="img_click" src="./img/x.png" alt="">` || tres.innerHTML == `<img class="img_click" src="./img/x.png" alt="">`&&  dois.innerHTML == `<img class="img_click" src="./img/x.png" alt="">` &&  um.innerHTML == `<img class="img_click" src="./img/x.png" alt="">` || um.innerHTML == `<img class="img_click" src="./img/x.png" alt="">`&&  quatro.innerHTML == `<img class="img_click" src="./img/x.png" alt="">` &&  sete.innerHTML == `<img class="img_click" src="./img/x.png" alt="">` || dois.innerHTML == `<img class="img_click" src="./img/x.png" alt="">`&&  cinco.innerHTML == `<img class="img_click" src="./img/x.png" alt="">` &&  oito.innerHTML == `<img class="img_click" src="./img/x.png" alt="">` || tres.innerHTML == `<img class="img_click" src="./img/x.png" alt="">`&&  seis.innerHTML == `<img class="img_click" src="./img/x.png" alt="">` &&  nove.innerHTML == `<img class="img_click" src="./img/x.png" alt="">` || um.innerHTML == `<img class="img_click" src="./img/x.png" alt="">`&& cinco.innerHTML == `<img class="img_click" src="./img/x.png" alt="">` &&  nove.innerHTML == `<img class="img_click" src="./img/x.png" alt="">`  || tres.innerHTML == `<img class="img_click" src="./img/x.png" alt="">`&&  cinco.innerHTML == `<img class="img_click" src="./img/x.png" alt="">` &&  sete.innerHTML == `<img class="img_click" src="./img/x.png" alt="">`){
+      contTime=0
+    }else if(nove.innerHTML == `<img class="img_click" src="./img/o.png" alt="">`&&  oito.innerHTML == `<img class="img_click" src="./img/o.png" alt="">` &&  sete.innerHTML == `<img class="img_click" src="./img/o.png" alt="">` || seis.innerHTML == `<img class="img_click" src="./img/o.png" alt="">`&&  cinco.innerHTML == `<img class="img_click" src="./img/o.png" alt="">` &&  quatro.innerHTML == `<img class="img_click" src="./img/o.png" alt="">` || tres.innerHTML == `<img class="img_click" src="./img/o.png" alt="">`&&  dois.innerHTML == `<img class="img_click" src="./img/o.png" alt="">` &&  um.innerHTML == `<img class="img_click" src="./img/o.png" alt="">` || um.innerHTML == `<img class="img_click" src="./img/o.png" alt="">`&&  quatro.innerHTML == `<img class="img_click" src="./img/o.png" alt="">` &&  sete.innerHTML == `<img class="img_click" src="./img/o.png" alt="">` || dois.innerHTML == `<img class="img_click" src="./img/o.png" alt="">`&&  cinco.innerHTML == `<img class="img_click" src="./img/o.png" alt="">` &&  oito.innerHTML == `<img class="img_click" src="./img/o.png" alt="">` || tres.innerHTML == `<img class="img_click" src="./img/o.png" alt="">`&&  seis.innerHTML == `<img class="img_click" src="./img/o.png" alt="">` &&  nove.innerHTML == `<img class="img_click" src="./img/o.png" alt="">` || um.innerHTML == `<img class="img_click" src="./img/o.png" alt="">`&& cinco.innerHTML == `<img class="img_click" src="./img/o.png" alt="">` &&  nove.innerHTML == `<img class="img_click" src="./img/o.png" alt="">`  || tres.innerHTML == `<img class="img_click" src="./img/o.png" alt="">`&&  cinco.innerHTML == `<img class="img_click" src="./img/o.png" alt="">` &&  sete.innerHTML == `<img class="img_click" src="./img/o.png" alt="">`){
+        contTime=0
+      }
 }
 
 

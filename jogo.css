@@ -13,7 +13,7 @@ color: rgb(0, 255, 255);
     height: 50vh;
     width: 50vw;
     border: blue solid 2px;
-animation: fundoAnimado 3s  ease-in-out infinite;
+animation: fundoAnimado 1s  ease-in-out infinite;
 transition: 1s;
 }
 .estilo{
@@ -25,7 +25,7 @@ transition: 1s;
     flex-direction: column;
     height: 50vh;
     width: 50vw;
-animation: fundoAnimado2 3s alternate-reverse ease-in-out infinite;
+animation: fundoAnimado2 1s alternate-reverse ease-in-out infinite;
 
 }
 @keyframes fundoAnimado{
