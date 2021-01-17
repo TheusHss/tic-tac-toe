@@ -1,10 +1,17 @@
-body{
-    background-color: black;
+*{
+    margin: 0;
 }
-#abaCadastro{
-    animation: aparecer 2s;
-color: rgb(0, 255, 255);
+body {
+    animation: fundoAnimado 8s ease-in-out infinite alternate;
+    background: rgb(0,0,0);
+}
+.container{
+    animation: fundoAnimado2 8s ease-in-out infinite alternate;
+}
 
+#abaCadastro {
+    animation: aparecer 2s;
+    color: rgb(0, 255, 255);
     border-radius: 4vh;
     display: flex;
     justify-content: space-around;
@@ -13,149 +20,154 @@ color: rgb(0, 255, 255);
     height: 50vh;
     width: 50vw;
     border: blue solid 2px;
-animation: fundoAnimado 1s  ease-in-out infinite;
-transition: 1s;
+    animation: fundoAnimado 1s ease-in-out infinite;
+    transition: 1s;
 }
-.estilo{
-    border-radius: 4vh;
 
+.estilo {
+    border-radius: 4vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
     height: 50vh;
     width: 50vw;
-animation: fundoAnimado2 1s alternate-reverse ease-in-out infinite;
+    animation: fundoAnimado2 1s alternate-reverse ease-in-out infinite;
+}
 
-}
-@keyframes fundoAnimado{
-    0%{
-        background: rgb(0,47,255);
-        background: linear-gradient(90deg,rgb(0, 0, 0) 0%,rgb(0, 255, 255) 0%, rgba(0,47,240,1) 5%, rgba(0,0,0,1) 5%);
+@keyframes fundoAnimado {
+    0% {
+        background: rgb(0, 47, 255);
+        background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 255, 255) 0%, rgba(0, 47, 240, 1) 5%, rgba(0, 0, 0, 1) 5%);
     }
-    10%{
-        background: rgb(0,47,255);
-        background: linear-gradient(90deg,rgb(0, 0, 0) 5%,rgb(0, 255, 255) 5%, rgba(0,47,255,1) 10%, rgb(0, 0, 0) 10%);
+    10% {
+        background: rgb(0, 47, 255);
+        background: linear-gradient(90deg, rgb(0, 0, 0) 5%, rgb(0, 255, 255) 5%, rgba(0, 47, 255, 1) 10%, rgb(0, 0, 0) 10%);
     }
-    20%{
-        background: rgb(0,47,255);
-        background: linear-gradient(90deg,rgb(0, 0, 0) 15%,rgb(0, 255, 255) 15%, rgba(0,47,240,1) 20%, rgba(0,0,0,1) 20%);
+    20% {
+        background: rgb(0, 47, 255);
+        background: linear-gradient(90deg, rgb(0, 0, 0) 15%, rgb(0, 255, 255) 15%, rgba(0, 47, 240, 1) 20%, rgba(0, 0, 0, 1) 20%);
     }
-    30%{
-        background: rgb(0,47,255);
-        background: linear-gradient(90deg,rgb(0, 0, 0) 25%,rgb(0, 255, 255) 25%, rgba(0,47,225,1) 30%, rgb(0, 0, 0) 30%);
+    30% {
+        background: rgb(0, 47, 255);
+        background: linear-gradient(90deg, rgb(0, 0, 0) 25%, rgb(0, 255, 255) 25%, rgba(0, 47, 225, 1) 30%, rgb(0, 0, 0) 30%);
     }
-    40%{
-        background: rgb(0,47,255);
-        background: linear-gradient(90deg,rgb(0, 0, 0) 35%,rgb(0, 255, 255) 35%, rgba(0,47,210,1) 40%, rgba(0,0,0,1) 40%);
+    40% {
+        background: rgb(0, 47, 255);
+        background: linear-gradient(90deg, rgb(0, 0, 0) 35%, rgb(0, 255, 255) 35%, rgba(0, 47, 210, 1) 40%, rgba(0, 0, 0, 1) 40%);
     }
-    50%{
-        background: rgb(0,47,255);
-        background: linear-gradient(90deg, rgb(0, 0, 0) 45%,rgb(0, 255, 255) 45%,rgba(0,47,195,1) 50%, rgb(0, 0, 0) 50%);
+    50% {
+        background: rgb(0, 47, 255);
+        background: linear-gradient(90deg, rgb(0, 0, 0) 45%, rgb(0, 255, 255) 45%, rgba(0, 47, 195, 1) 50%, rgb(0, 0, 0) 50%);
     }
-    60%{
-        background: rgb(0,47,255);
-        background: linear-gradient(90deg,rgb(0, 0, 0) 55%,rgb(0, 255, 255) 55%, rgba(0,47,180,1) 60%, rgba(0,0,0,1) 60%);
+    60% {
+        background: rgb(0, 47, 255);
+        background: linear-gradient(90deg, rgb(0, 0, 0) 55%, rgb(0, 255, 255) 55%, rgba(0, 47, 180, 1) 60%, rgba(0, 0, 0, 1) 60%);
     }
-    70%{
-        background: rgb(0,47,255);
-        background: linear-gradient(90deg,rgb(0, 0, 0) 65%,rgb(0, 255, 255) 65%, rgba(0,47,165,1) 70%, rgb(0, 0, 0) 70%);
+    70% {
+        background: rgb(0, 47, 255);
+        background: linear-gradient(90deg, rgb(0, 0, 0) 65%, rgb(0, 255, 255) 65%, rgba(0, 47, 165, 1) 70%, rgb(0, 0, 0) 70%);
     }
-    80%{
-        background: rgb(0,47,255);
-        background: linear-gradient(90deg,rgb(0, 0, 0) 75%,rgb(0, 255, 255) 75%, rgba(0,47,150,1) 80%, rgba(0,0,0,1) 80%);
+    80% {
+        background: rgb(0, 47, 255);
+        background: linear-gradient(90deg, rgb(0, 0, 0) 75%, rgb(0, 255, 255) 75%, rgba(0, 47, 150, 1) 80%, rgba(0, 0, 0, 1) 80%);
     }
-    90%{
-        background: rgb(0,47,255);
-        background: linear-gradient(90deg,rgb(0, 0, 0) 85%,rgb(0, 255, 255) 85%, rgba(0,47,135,1) 90%, rgb(0, 0, 0) 90%);
+    90% {
+        background: rgb(0, 47, 255);
+        background: linear-gradient(90deg, rgb(0, 0, 0) 85%, rgb(0, 255, 255) 85%, rgba(0, 47, 135, 1) 90%, rgb(0, 0, 0) 90%);
     }
-    100%{
-        background: rgb(0,47,255);
-        background: linear-gradient(90deg,rgb(0, 0, 0) 95%,rgb(0, 255, 255) 95%, rgba(0,47,120,1) 100%, rgba(0,0,0,1) 100%);
-    }
-}
-@keyframes fundoAnimado2{
-    0%{
-        background: rgb(0,47,255);
-        background: linear-gradient(180deg,rgba(0, 0, 0, 0) 0%,rgb(0, 255, 255) 0%, rgba(0,47,240,1) 5%,rgba(0, 0, 0, 0) 5%);
-    }
-    10%{
-        background: rgb(0,47,255);
-        background: linear-gradient(180deg,rgba(0, 0, 0, 0) 5%,rgb(0, 255, 255) 5%, rgba(0,47,255,1) 10%, rgba(0, 0, 0, 0) 10%);
-    }
-    20%{
-        background: rgb(0,47,255);
-        background: linear-gradient(180deg,rgba(0, 0, 0, 0) 15%,rgb(0, 255, 255) 15%, rgba(0,47,240,1) 20%,rgba(0, 0, 0, 0) 20%);
-    }
-    30%{
-        background: rgb(0,47,255);
-        background: linear-gradient(180deg,rgba(0, 0, 0, 0) 25%,rgb(0, 255, 255) 25%, rgba(0,47,225,1) 30%, rgba(0, 0, 0, 0) 30%);
-    }
-    40%{
-        background: rgb(0,47,255);
-        background: linear-gradient(180deg,rgba(0, 0, 0, 0) 35%,rgb(0, 255, 255) 35%, rgba(0,47,210,1) 40%,rgba(0, 0, 0, 0) 40%);
-    }
-    50%{
-        background: rgb(0,47,255);
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 45%,rgb(0, 255, 255) 45%,rgba(0,47,195,1) 50%, rgba(0, 0, 0, 0) 50%);
-    }
-    60%{
-        background: rgb(0,47,255);
-        background: linear-gradient(180deg,rgba(0, 0, 0, 0) 55%,rgb(0, 255, 255) 55%, rgba(0,47,180,1) 60%,rgba(0, 0, 0, 0) 60%);
-    }
-    70%{
-        background: rgb(0,47,255);
-        background: linear-gradient(180deg,rgba(0, 0, 0, 0) 65%,rgb(0, 255, 255) 65%, rgba(0,47,165,1) 70%, rgba(0, 0, 0, 0) 70%);
-    }
-    80%{
-        background: rgb(0,47,255);
-        background: linear-gradient(180deg,rgba(0, 0, 0, 0) 75%,rgb(0, 255, 255) 75%, rgba(0,47,150,1) 80%,rgba(0, 0, 0, 0) 80%);
-    }
-    90%{
-        background: rgb(0,47,255);
-        background: linear-gradient(180deg,rgba(0, 0, 0, 0) 85%,rgb(0, 255, 255) 85%, rgba(0,47,135,1) 90%, rgba(0, 0, 0, 0) 90%);
-    }
-    100%{
-        background: rgb(0,47,255);
-        background: linear-gradient(180deg,rgba(0, 0, 0, 0) 95%,rgb(0, 255, 255) 95%, rgba(0,47,120,1) 100%,rgba(0, 0, 0, 0) 100%);
+    100% {
+        background: rgb(0, 47, 255);
+        background: linear-gradient(90deg, rgb(0, 0, 0) 95%, rgb(0, 255, 255) 95%, rgba(0, 47, 120, 1) 100%, rgba(0, 0, 0, 1) 100%);
     }
 }
-@keyframes aparecer{
-    from{
+
+@keyframes fundoAnimado2 {
+    0% {
+        background: rgb(0, 47, 255);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 255, 255) 0%, rgba(0, 47, 240, 1) 5%, rgba(0, 0, 0, 0) 5%);
+    }
+    10% {
+        background: rgb(0, 47, 255);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 5%, rgb(0, 255, 255) 5%, rgba(0, 47, 255, 1) 10%, rgba(0, 0, 0, 0) 10%);
+    }
+    20% {
+        background: rgb(0, 47, 255);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 15%, rgb(0, 255, 255) 15%, rgba(0, 47, 240, 1) 20%, rgba(0, 0, 0, 0) 20%);
+    }
+    30% {
+        background: rgb(0, 47, 255);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 25%, rgb(0, 255, 255) 25%, rgba(0, 47, 225, 1) 30%, rgba(0, 0, 0, 0) 30%);
+    }
+    40% {
+        background: rgb(0, 47, 255);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 35%, rgb(0, 255, 255) 35%, rgba(0, 47, 210, 1) 40%, rgba(0, 0, 0, 0) 40%);
+    }
+    50% {
+        background: rgb(0, 47, 255);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 45%, rgb(0, 255, 255) 45%, rgba(0, 47, 195, 1) 50%, rgba(0, 0, 0, 0) 50%);
+    }
+    60% {
+        background: rgb(0, 47, 255);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 55%, rgb(0, 255, 255) 55%, rgba(0, 47, 180, 1) 60%, rgba(0, 0, 0, 0) 60%);
+    }
+    70% {
+        background: rgb(0, 47, 255);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65%, rgb(0, 255, 255) 65%, rgba(0, 47, 165, 1) 70%, rgba(0, 0, 0, 0) 70%);
+    }
+    80% {
+        background: rgb(0, 47, 255);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, rgb(0, 255, 255) 75%, rgba(0, 47, 150, 1) 80%, rgba(0, 0, 0, 0) 80%);
+    }
+    90% {
+        background: rgb(0, 47, 255);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 85%, rgb(0, 255, 255) 85%, rgba(0, 47, 135, 1) 90%, rgba(0, 0, 0, 0) 90%);
+    }
+    100% {
+        background: rgb(0, 47, 255);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 95%, rgb(0, 255, 255) 95%, rgba(0, 47, 120, 1) 100%, rgba(0, 0, 0, 0) 100%);
+    }
+}
+
+@keyframes aparecer {
+    from {
         transform: translateY(200px);
     }
 }
- button{
+
+button {
     outline: none;
-color: rgb(0, 255, 255);
-background-color: rgb(0, 0, 0);
-border: cyan solid 2px;
+    color: rgb(0, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border: cyan solid 2px;
 }
-#abaCadastro button:hover{
+
+#abaCadastro button:hover {
     opacity: 0.3;
 }
-input{
-    outline: none;
 
+input {
+    outline: none;
     background-color: cyan;
     color: black;
     border-radius: 4vh;
 }
 
-#vez{
+#vez {
     text-align: center;
     width: 75vh;
     color: cyan;
 }
 
-.container{
+.container {
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.container-jogo{
+
+.container-jogo {
     height: 75vh;
     width: 75vh;
     display: none;
@@ -163,12 +175,14 @@ input{
     align-items: center;
     justify-content: center;
 }
-.box{
+
+.box {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.linha{
+
+.linha {
     height: 25vh;
     width: 25vh;
     border: solid white 1px;
@@ -176,38 +190,48 @@ input{
     align-items: center;
     justify-content: center;
 }
-#um{
-border-left:none;
-border-top: none;
-}
-#dois{
+
+#um {
+    border-left: none;
     border-top: none;
 }
-#tres{
-    border-right:none ;
+
+#dois {
     border-top: none;
 }
-#quatro{
+
+#tres {
+    border-right: none;
+    border-top: none;
+}
+
+#quatro {
     border-left: none;
 }
-#seis{
-    border-right:none ;
+
+#seis {
+    border-right: none;
 }
-#sete{
+
+#sete {
     border-left: none;
     border-bottom: none;
 }
-#oito{
+
+#oito {
     border-bottom: none;
 }
-#nove{
+
+#nove {
     border-bottom: none;
-    border-right:none;
+    border-right: none;
 }
-.img_click{
+
+.img_click {
     height: 20vh;
 }
-.timeDeJogo{
+
+.timeDeJogo {
     position: absolute;
     top: 2vh;
     height: 2vh;
@@ -215,3 +239,35 @@ border-top: none;
     background-color: cyan;
     transition: 0.1s;
 }
+
+@media only screen and (max-width: 800px) {
+    #abaCadastro, .estilo {
+        height: 60vh;
+        width: 80vw;
+    }
+    .linha {
+        height: 15vh;
+        width: 15vh;
+    }
+    .img_click {
+        height: 10vh;
+    }
+    * {
+        font-size: 1.4rem;
+    }
+    #vez {
+        font-size: 1rem;
+    }
+    input {
+        font-size: 1rem;
+        width: 90%;
+        height: 5%;
+    }
+}
+
+/* @media only screen and (max-width: 700px){
+    .boxPoesia{
+        font-size: 1.8vh;
+        width: 80%;
+    }
+} */

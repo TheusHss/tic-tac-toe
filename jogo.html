@@ -19,8 +19,10 @@
                 <button onclick="iniciar()">INICIAR</button>
             </div>
         </div>
-
+        
         <div class="container-jogo" id="container_jogo">
+            <div class="timeDeJogo">
+            </div>
             <h1 id="vez"></h1>
             <div onclick="box_click()" class="box">
                 <div onclick="um_click()" class="linha" id="um"></div>
@@ -38,13 +40,12 @@
                 <div onclick="nove_click()" class="linha" id="nove"></div>
             </div>
             <button onclick="resetar()">RESETAR</button>
-            <div class="timeDeJogo">
-            </div>
         </div>
 
     </div>
+    <audio id="ganhou" src="./audio/efeito_sonoro_risada_de_ladrao_2139370119085460434.mp3"></audio>
     <audio id="naoRoda" src="./audio/y2mate.com - Agulha Arranhando Disco, Som de Fail - Efeito Sonoro.mp3"></audio>
-    <audio id="vaiRodar" src="./audio/efeito_sonoro_risada_de_ladrao_2139370119085460434.mp3"></audio>
+    <audio id="vaiRodar" src="./audio/y2mate.com - Toque de notificação whatsapp do iPhone online video cutter com.mp3"></audio>
 </body>
 
 </html>
